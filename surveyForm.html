@@ -1,0 +1,68 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="surveyformcss.css">
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+      <p id="description">Basic Survey Form</p>
+    <form id="survey-form">
+	    <div class="nen">
+
+	  <fieldset >
+	    <legend>Info</legend>
+        <label id="name-label">Name : <input class="nenn" id="name" type="text" required placeholder="Enter Name"/></label>
+        <label id="email-label">email : </label><input class="nenn" id="email" type="email" required placeholder="Enter email"/></label>
+        <label id="number-label">Number : </label><input class="nenn" id="number" type="number" max=13 min=10 placeholder="ex:9999222222"/></label>
+	  </fieldset>
+	  </div>
+
+	  <div class="dd">
+	    <fieldset>
+		  <legend>Select dropdown</legend>
+        <select id="dropdown">
+		    choose one:
+            <option value="">choose</option>
+            <option value="one">One</option>
+            <option value="two">Two</option>
+            <option value="three">Three</option>
+        </select>
+		</fieldset>
+	  </div>
+
+	  <div class="rb">
+	   <fieldset>
+	    <legend> Radios</legend>
+        <input type="radio" value="visit1" name="rad">Visit one 
+        <input type="radio" value="visit2" name="rad">Visit two
+        <input type="radio" value="visit3"name="rad">Visit three
+	   </fieldset>
+	  </div>
+
+	  <div class="cb">
+	  <fieldset>
+	    <legend>Checkboxes</legend>
+        <input type="checkbox" value="one">Ones
+        <input type="checkbox" value="two">Twos
+        <input type="checkbox" value="three">Threes
+        <input type="checkbox" value="four">Fours
+	  </fieldset>
+	  </div>
+
+	  <div class="ta">
+        <textarea rows= 5 cols= 60 id="extra" placeholder="anything"></textarea>
+	  </div>
+
+	  <div class="sub">
+        <button id="submit" type="submit">Submit</button>
+	  </div>
+    
+    </form>
+
+  </body>
+
+</html>
